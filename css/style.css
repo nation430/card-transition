@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(../img/bg-img.png);
+}
+.header {
+  font-size: 5em;
+  background: linear-gradient(to right, #71d030 0%, #ec0aff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 2rem;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card {
+  width: 250px;
+  height: 300px;
+  border: 1px solid #bbb;
+  background-color: whitesmoke;
+  overflow: hidden;
+  border-radius: 12px;
+  font-family: "work sans";
+}
+
+.card-image-holder {
+  background-image: linear-gradient(45deg, dodgerblue, rebeccapurple);
+  margin: 0;
+  height: 100px;
+  transition-property: height;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+/* CSS PSEUDO CLASS */
+
+.card:hover .card-image-holder {
+  transition-timing-function: cubic-bezier(0.68, 0.55, 0.27, 1.55);
+  height: 300px;
+}
+.card-title {
+  margin: 0;
+}
+.card-body {
+  padding: 1rem;
+}
+
+/* CARD2 */
+.h-card {
+  width: 250px;
+  height: 300px;
+  border: 1px solid #bbb;
+  background-image: linear-gradient(45deg, orange 20%, orchid);
+  overflow: hidden;
+  border-radius: 12px;
+  font-family: "work sans";
+}
+.h-card .h-card-body {
+  background: #fff;
+  height: 300px;
+  padding: 1rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out 0.2s;
+}
+
+.h-card:hover .h-card-body {
+  /* transform: translateX(-5%); */
+  transform: translateX(0%);
+  background-color: cyan;
+}
+
+/* sha-card */
+
+.sha-card {
+  width: 250px;
+  height: 300px;
+  background-color: lime;
+  border-radius: 12px;
+}
+.sha-card-body {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  font-family: "work sans";
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 13px rgb(0, 0, 0, 0.1);
+  transform: translate(0, 0);
+  transition-duration: 0.3s;
+}
+.sha-card:hover .sha-card-body {
+  box-shadow: 0 3px 13px rgb(0, 0, 0, 0.1);
+  transform: translate(15px, 15px);
+  background-color: crimson;
+  color: #fff;
+}
